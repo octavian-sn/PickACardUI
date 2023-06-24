@@ -25,6 +25,9 @@ namespace PickACardUI
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Takes number input from the card slider and passes it to to PickSomeCards method to output an array of cards and display them in the list box.
+        /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string[] pickedCards = CardPicker.PickSomeCards((int)numberOfCards.Value);
